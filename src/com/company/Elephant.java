@@ -4,8 +4,8 @@ public class Elephant extends Animal implements Printable{
     private String proboscis;
 
     public Elephant(String name, String eat, String proboscis) {
-        this.name = name;
-        this.eat = eat;
+        setName(name);
+        setEat(eat);
         this.proboscis = proboscis;
     }
 
@@ -19,6 +19,6 @@ public class Elephant extends Animal implements Printable{
 
     @Override
     public void print() {
-        System.out.println(name + eat + proboscis);
+        System.out.println("имя: " + getName() + ", является " + getEat() + ", хобот " +proboscis);
     }
 }

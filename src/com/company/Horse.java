@@ -5,8 +5,8 @@ public class Horse extends Animal implements Printable{
     private String detachment;
 
     public Horse(String name, String eat, int speed, String detachment) {
-        this.name = name;
-        this.eat = eat;
+        super.setName(name);
+        super.setEat(eat);
         this.speed = speed;
         this.detachment = detachment;
     }
@@ -29,6 +29,7 @@ public class Horse extends Animal implements Printable{
 
     @Override
     public void print() {
-        System.out.println(name + eat + speed + detachment);
+        System.out.println("имя: " + getName() + " является " + getEat() + ", скорость которого равна " + speed + ", вид "
+                + detachment);
     }
 }

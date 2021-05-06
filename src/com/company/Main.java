@@ -13,17 +13,17 @@ public class Main {
         Animal ship = createObject("Ship");
         ship.print();
     }
-    
+
     public static Animal createObject(String className) {
         switch (className) {
             case ("Horse"):
                 Horse horse = new Horse("Лошадка " , "травоядная ", 100, " парнокопытное");
                 return horse;
             case ("Elephant"):
-                Elephant elephant = new Elephant("Dodo", " орехоядная", " длинный");
+                Elephant elephant = new Elephant("Dodo", "орехоядная", "длинный");
                 return elephant;
             default:
-                Ship ship = new Ship("Анастасия", " травоядная", " белый");
+                Ship ship = new Ship("Анастасия", "травоядная", "белый");
                 return ship;
 
         }
